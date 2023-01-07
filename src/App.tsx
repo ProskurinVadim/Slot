@@ -4,6 +4,7 @@ import PopText from "./common/PopText";
 const SlotPage: React.FC = () => {
     const [result, setResult] = useState<string>("");
 
+function App() {
     return (
         <section className="page">
             <SlotMashine setResult={setResult} isEmpty={!!result.length} />
