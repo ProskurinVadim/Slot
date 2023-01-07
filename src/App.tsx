@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import SlotMashine from "./common/SlotMashine";
 import PopText from "./common/PopText";
-const SlotPage: React.FC = () => {
-    const [result, setResult] = useState<string>("");
 
-function App() {
+const App: React.FC = () => {
+    const [result, setResult] = useState<string>("");
     return (
         <section className="page">
             <SlotMashine setResult={setResult} isEmpty={!!result.length} />
@@ -13,4 +12,4 @@ function App() {
     )
 }
 
-export default SlotPage;
+export default App;
